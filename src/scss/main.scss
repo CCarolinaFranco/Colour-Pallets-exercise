@@ -1,4 +1,4 @@
-
+/*
 
 .palette{
   border:5px solid lightblue;
@@ -12,4 +12,95 @@
     width:40px;
     height: 40px;
     background-color: brown;
+}*/
+
+/* Apply a funky background color */
+body {
+  background-color: #ffcc00; /* Bright yellow */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Give the title a playful font and color */
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #ff3366; /* Pinkish-red */
+  text-align: center;
+}
+
+/* Style the search form */
+form {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Add some funky styles to the search input */
+.search {
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #ff3366;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 200px;
+}
+
+/* Style the search button */
+.btnSearch {
+  background-color: #ff3366; /* Pinkish-red */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnSearch:hover {
+  background-color: #ff6699; /* Lighter pinkish-red on hover */
+}
+
+/* Style the palettes list */
+.js_palette_list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Give each palette a funky border */
+.js_li_palette {
+  border: 5px solid #ff3366;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Style the palette name */
+.js_li_palette h3 {
+  color: #ff3366;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style the individual colors in the palette */
+.palette__color {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Give the favorites list a funky background color */
+.js_palette_fav {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: #ff6699; /* Light pinkish-red */
+  padding: 20px;
+  border-radius: 10px;
 }
