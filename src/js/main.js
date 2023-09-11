@@ -1,10 +1,11 @@
 'use strict';
 
 const ulElement = document.querySelector('.js_palette_list');
+const ulFavorites = document.querySelector('.js_palette_fav');
 const url = 'https://beta.adalab.es/ejercicios-de-los-materiales/js-ejercicio-de-paletas/data/palettes.json';
 
 let listPalettesApi = [];
-let listPalettesFavorities = [];
+let listPalettesFavorites = [];
 fetch(url)
 .then((response) => response.json())
 .then((data) => {
@@ -47,14 +48,19 @@ function handleClick(event){
   const id = event.currentTarget.id;
   const selectedPlette = listPalettesApi.find((item) => item.id === id);
  
-  const indexPaltte = listPalettesFavorities.findIndex((item) => item.id ===id);
+  const indexPaltte = listPalettesFavorites.findIndex((item) => item.id === id);
   if(indexPaltte === -1) {
-    listPalettesFavorities.push(selectedPlette); 
+    listPalettesFavorites.push(selectedPlette); 
   }else{
-    listPalettesFavorities.splice(indexPaltte, 1);
-
-
+    listPalettesFavorites.splice(indexPaltte, 1);
   }
-  console.log(listPalettesFavorities);
+  console.log(listPalettesFavorites);
+  renderFavoritesList();
 }
 
+function renderFavoritesList(){
+  ulFavorites.innerHTML = '';
+  for(const fav of listPalettesFavorites ){
+    ulFavorites.innerHTML += renderPalette(fav);
+}
+}
