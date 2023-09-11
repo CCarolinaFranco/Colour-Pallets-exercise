@@ -16,7 +16,7 @@
 
 /* Apply a funky background color */
 body {
-  background-color: #ffcc00; /* Bright yellow */
+  background-color: #70694b; /* Bright yellow */
   font-family: 'Arial', sans-serif;
 }
 
@@ -26,7 +26,11 @@ h1 {
   color: #ff3366; /* Pinkish-red */
   text-align: center;
 }
-
+h2 {
+  font-family: 'Pacifico', cursive;
+  color: #ff3366; /* Pinkish-red */
+  text-align: center;
+}
 /* Style the search form */
 form {
   text-align: center;
@@ -37,7 +41,7 @@ form {
 .search {
   padding: 10px;
   font-size: 18px;
-  border: 2px solid #ff3366;
+  border: 2px solid #aa89b3;
   border-radius: 5px;
   background-color: #fff;
   width: 200px;
@@ -45,7 +49,7 @@ form {
 
 /* Style the search button */
 .btnSearch {
-  background-color: #ff3366; /* Pinkish-red */
+  background-color: #c47ebe; /* Pinkish-red */
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -69,7 +73,7 @@ form {
 
 /* Give each palette a funky border */
 .js_li_palette {
-  border: 5px solid #ff3366;
+  border: 5px solid #aa89b3;
   border-radius: 10px;
   padding: 10px;
   background-color: #fff;
@@ -100,7 +104,7 @@ form {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  background-color: #ff6699; /* Light pinkish-red */
+  background-color: #928291; /* Light pinkish-red */
   padding: 20px;
   border-radius: 10px;
 }
