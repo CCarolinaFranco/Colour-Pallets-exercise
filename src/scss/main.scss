@@ -1,18 +1,3 @@
-/*
-
-.palette{
-  border:5px solid lightblue;
-  display:flex;  
-  width:200px;
-  
-
-}
-
-.palette__color{
-    width:40px;
-    height: 40px;
-    background-color: brown;
-}*/
 
 /* Apply a funky background color */
 body {
@@ -23,13 +8,15 @@ body {
 /* Give the title a playful font and color */
 h1 {
   font-family: 'Pacifico', cursive;
-  color: #ff3366; /* Pinkish-red */
+  color: #cfb087; /* Pinkish-red */
   text-align: center;
 }
-h2 {
+.h2 {
   font-family: 'Pacifico', cursive;
-  color: #ff3366; /* Pinkish-red */
+  color:#cfb087; /* Pinkish-red */
   text-align: center;
+  border: 10px black;
+  
 }
 /* Style the search form */
 form {
@@ -83,7 +70,7 @@ form {
 
 /* Style the palette name */
 .js_li_palette h3 {
-  color: #ff3366;
+  color:  #aa89b3;
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -97,14 +84,30 @@ form {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Give the favorites list a funky background color */
+
+
+
+main {
+  display: flex;
+  flex-direction: column; /* Change to column layout */
+  align-items: center; /* Center content horizontally */
+  padding: 20px;
+}
+
+/* Style the favorites container */
+.favorites-container {
+  text-align: center; /* Center the title and list */
+}
+
+
+/* Style the favorites list */
 .js_palette_fav {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  background-color: #928291; /* Light pinkish-red */
+  background-color: #aa89b3; /* Light pinkish-red */
   padding: 20px;
   border-radius: 10px;
 }
